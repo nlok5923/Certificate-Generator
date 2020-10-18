@@ -1,0 +1,16 @@
+.cert__done h1{
+    font-size: 30px;
+    font-family: "montserrat";
+    text-align: center;
+}
+.cert__done {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    
+}
+.certificate {
+    width: 80%;
+    height: 96vh;
+    margin-left: 10%;
+}

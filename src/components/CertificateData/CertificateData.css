@@ -1,0 +1,38 @@
+.data{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: none;
+}
+.data h1{
+    font-size: 15px;
+    font-family: "montserrat";
+    margin-top: 19%;
+    margin-left: 45%;
+    background: none;
+
+}
+.data p{
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 15px;
+    width: 60%;
+    font-family: "montserrat";
+    background:none;
+}
+.data h2{
+    font-size: 15px;
+    font-family: "montserrat";
+    background: none;
+    width: 10%;
+
+}
+ .sg1 {
+     position: absolute;
+    margin-top: 7%;
+    margin-left: 24%;
+}
+ .sg2 {
+    margin-top: 7%;
+    margin-left: 65%;
+}

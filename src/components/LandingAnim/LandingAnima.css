@@ -1,0 +1,42 @@
+
+
+.Anim__page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1
+{
+    width: 20%;
+    height: 20vh;
+    background-color: red;
+    animation-name: box_anim;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+
+}
+.box1:after {
+    display: none;
+    width:1%;
+    content:"";
+}
+
+@keyframes box_anim {
+0%   {
+    width: 40%;
+    height: 20vh;
+    background-color: #f5d442;;
+}
+50%  {
+    width: 70%;
+    height: 50vh;
+    background-color: #f542f5;;
+}
+100% {
+    width: 100%;
+    height: 100vh;
+    background-color:#f54242;
+   }
+}

@@ -1,0 +1,53 @@
+.Anim__page {
+  width: 100%;
+  height: 100vh;
+}
+
+.box1 {
+  width: 20%;
+  height: 20vh;
+  background-color: red;
+  -webkit-animation-name: box_anim;
+          animation-name: box_anim;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes box_anim {
+  0% {
+    width: 40%;
+    height: 20vh;
+    background-color: #f5d442;
+  }
+  50% {
+    width: 70%;
+    height: 50vh;
+    background-color: #f542f5;
+  }
+  100% {
+    width: 90%;
+    height: 80vh;
+    background-color: #f54242;
+  }
+}
+
+@keyframes box_anim {
+  0% {
+    width: 40%;
+    height: 20vh;
+    background-color: #f5d442;
+  }
+  50% {
+    width: 70%;
+    height: 50vh;
+    background-color: #f542f5;
+  }
+  100% {
+    width: 90%;
+    height: 80vh;
+    background-color: #f54242;
+  }
+}
+/*# sourceMappingURL=LandingAnim.css.map */

@@ -1,0 +1,49 @@
+.cert__holder {
+    width: 50%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:200px 200px 200px;
+    grid-template-rows:  200px 200px 200px;
+    grid-gap: 20px;
+}
+.adjust__size {
+    width: 200px;
+    height: 200px;
+}
+.cert__selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.choice__display{
+    width: 50%;
+}
+.choice__display {
+    text-align: center;
+    font-size:20px;
+    font-family: "montserrat";
+}
+.display__cert{
+    height: 200px;
+    width: 300px;
+}
+.choice__display  img {
+    margin-top: 10%;
+}
+.BUTTON_KMY {
+    box-shadow: 5px 5px 10px grey;
+    margin-top: 10%;
+    margin-left: 35%;
+    background:#fa19dc;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 7px 50px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: "montserrat";
+    display: block;
+}
