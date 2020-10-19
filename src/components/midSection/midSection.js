@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {NavLink} from 'react-router-dom'
+// import {NavLink} from 'react-router-dom'
+import CertSelect from "../Certselect/CertSelect"
 import "./midSection.css"    
 // var ind =0;
  class midSection extends Component {
@@ -8,11 +9,11 @@ import "./midSection.css"
      
          this.state = {
               name:"",
-              link:"",
+             // link:"",
               date:"",
               body:"",
-              file1:"",
-              file2:"",
+            //   file1:"",
+            //   file2:"",
               sbody1:"",
               sbody2:""
          }
@@ -20,6 +21,19 @@ import "./midSection.css"
      handleChange =(e)=>{
         this.setState({[e.target.name]:e.target.value})
        // console.log(e.target.value.lastIndexOf(""))
+
+     }
+     handleSubmitClick=(e)=>{
+        //  let val = document.getElementByClassName("mid__sec");
+        //  console.log(val);
+
+       let k = document.getElementById("mid__sec");
+       console.log(k);
+       k.style.display="none";
+       let t = document.getElementById("dis__certSelect");
+       t.style.display="block";
+      //   alert("hello");
+        //  document.getElementByClassName
 
      }
  
@@ -43,12 +57,13 @@ import "./midSection.css"
          e.preventDefault();
      }
     render() {
-        const {name,score,link,file1,file2,body,date,sbody1,sbody2} = this.state;
+        const {name,body,date,sbody1,sbody2} = this.state;
         return (
-            <div className="mid__sec">
             <div>
-            <h1>Fill fields accordingly</h1>
-            <img src="./Images/certificate-1.jpg"></img>
+            <div id="mid__sec">
+            <div>
+            {/* <h1>Fill fields accordingly</h1> */}
+            <img src="./Images/certificate-1.jpg" alt="certificate"></img>
            </div> <div className="form__section">
             <form onSubmit={this.submitHandler}>
             <input type="text"  name ="name" placeholder="Enter name" value={name} onChange={this.handleChange}></input><br />
@@ -63,14 +78,18 @@ import "./midSection.css"
             {/* <label for="file1">Signature of Signatory body 1</label><br />
             <input type="file" className="file" name="file2" value ={file2} onChange={this.handlefileChange}></input><br /> */} 
             <textarea name="body" placeholder="Enter body you want" rows="7" cols="43" value={body}  onChange={this.handleChange} ></textarea>
-            <NavLink to="/CertSelect">
-            <button type="submit">Select Template</button>
-            </NavLink>
+            {/* <NavLink to="/CertSelect"> */}
+            <button type="submit" onClick={this.handleSubmitClick}>Select Template</button>
+            {/* </NavLink> */}
             </form>
             <div className="json__link">
-            <h1>OR</h1>
-            <input type="text" name="link" value={link} onChange={this.handleChange}></input>
+            {/* <h1>OR</h1>
+            <input type="text" name="link" value={link} onChange={this.handleChange}></input> */}
             </div>
+            </div>
+            </div>
+            <div id="dis__certSelect">
+            <CertSelect name ={name}  body={body} date={date} sbody1={sbody1} sbody2 = {sbody2} />
             </div>
             </div>
         )

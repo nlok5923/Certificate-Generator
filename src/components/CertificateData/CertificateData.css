@@ -1,38 +1,37 @@
 .data{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: none;
+    /* width: 100%;
+    height: 100vh; */
+    z-index:9999;
 }
-.data h1{
-    font-size: 15px;
-    font-family: "montserrat";
-    margin-top: 19%;
-    margin-left: 45%;
-    background: none;
-
-}
-.data p{
-    margin-top: 5%;
-    margin-left: 20%;
-    font-size: 15px;
-    width: 60%;
-    font-family: "montserrat";
-    background:none;
-}
-.data h2{
-    font-size: 15px;
-    font-family: "montserrat";
-    background: none;
-    width: 10%;
-
-}
- .sg1 {
-     position: absolute;
-    margin-top: 7%;
-    margin-left: 24%;
-}
- .sg2 {
-    margin-top: 7%;
-    margin-left: 65%;
-}
+ .data h2,h1,p{
+     font-family:"montserrat";
+     position:absolute;
+     background:none;
+ }
+ .name {
+     margin-top:15%;
+     margin-left:45%;
+     font-size:25px;
+ }
+ .date{
+     margin-top:15%;
+     margin-left:80%;
+     font-size:20px;
+ }
+ p{ 
+     font-size:15px;
+     margin-top:23%;
+     margin-left:15%;
+     width: 70%;
+ }
+ .sg1,.sg2{
+     font-size:20px;
+     margin-top:37%;
+ }
+ .sg1{
+     margin-left:16%;
+ }
+ .sg2{
+     margin-left:77%;
+ }
+ 

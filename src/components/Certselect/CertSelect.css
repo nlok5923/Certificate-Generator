@@ -1,4 +1,8 @@
+#dis__formed{
+    display: none;
+}
 .cert__holder {
+    display:none;
     width: 50%;
     height: 100vh;
     display: grid;

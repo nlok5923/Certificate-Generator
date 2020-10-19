@@ -1,4 +1,7 @@
-.mid__sec{
+#dis__certSelect {
+  display: none;
+}
+#mid__sec{
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -6,11 +9,11 @@
   justify-content: center;
 
 }
-.mid__sec img{
+#mid__sec img{
   width: 500px;
   height: 400px;
 }
-.mid__sec h1{
+#mid__sec h1{
   font-size: 30px;
   font-family: "montserrat";
   text-align: center;
