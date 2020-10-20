@@ -13,6 +13,8 @@ This is an Under-development Certificate generator but the basic structure of th
 
 PS: do not use JSON placeholder for now to generate multiple certificate at once as this functionality hasn't implemented in it till now.
 
+for now a single certificate template has been added will add multiple templates soon !!
+
 BTW
 
 ## Sample data to test:
