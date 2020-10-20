@@ -3,25 +3,28 @@
     height: 100vh; */
     z-index:9999;
 }
- .data h2,h1,p{
+ .data h2,p{
      font-family:"montserrat";
      position:absolute;
      background:none;
  }
  .name {
      margin-top:15%;
-     margin-left:45%;
+     margin-left:47%;
      font-size:25px;
  }
  .date{
+    font-family:"montserrat";
+    position:absolute;
+    background:none;
      margin-top:15%;
-     margin-left:80%;
+     margin-left:74%;
      font-size:20px;
  }
  p{ 
      font-size:15px;
      margin-top:23%;
-     margin-left:15%;
+     margin-left:20%;
      width: 70%;
  }
  .sg1,.sg2{
@@ -29,9 +32,9 @@
      margin-top:37%;
  }
  .sg1{
-     margin-left:16%;
+     margin-left:20%;
  }
  .sg2{
-     margin-left:77%;
+     margin-left:74%;
  }
  

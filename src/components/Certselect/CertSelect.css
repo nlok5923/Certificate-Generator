@@ -3,15 +3,16 @@
 }
 .cert__holder {
     display:none;
-    width: 50%;
+    width: 60%;
+    margin-left:3%;
     height: 100vh;
     display: grid;
-    grid-template-columns:200px 200px 200px;
+    grid-template-columns:220px 220px 220px;
     grid-template-rows:  200px 200px 200px;
     grid-gap: 20px;
 }
 .adjust__size {
-    width: 200px;
+    width: 220px;
     height: 200px;
 }
 .cert__selector {

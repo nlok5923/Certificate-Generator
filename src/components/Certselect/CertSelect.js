@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Images from "../DataFiles/Image"
+import Swal from 'sweetalert2'
 // import {NavLink} from 'react-router-dom'
 import "./CertSelect.css"
 import Certificateformed from "../CertificateFormed/CertificateFormed"
@@ -9,7 +10,7 @@ import Certificateformed from "../CertificateFormed/CertificateFormed"
          super(props)
      
          this.state = {
-              selectedSrc:""
+              selectedSrc:"Images/blank.jpg"
          }
      }
      ImageSelected =(e) =>{
@@ -21,10 +22,28 @@ import Certificateformed from "../CertificateFormed/CertificateFormed"
         //  alert(src);
      }
      handleSubmitDis=(e)=>{
-         let k = document.getElementById("handle__dis");
+        const {selectedSrc} =this.state
+        if(selectedSrc === "Images/blank.jpg")
+        {
+            Swal.fire(
+                'Please select',
+                'No template selected',
+                'error'
+              )
+           
+        }
+        else
+        {
+            Swal.fire(
+                'Good job!',
+                'You Selected a nice one',
+                'success'
+              )
+        let k = document.getElementById("handle__dis");
          k.style.display="none";
          let t = document.getElementById("dis__formed");
          t.style.display="block";
+        }
 
      }
      
@@ -41,7 +60,7 @@ import Certificateformed from "../CertificateFormed/CertificateFormed"
             </div>
             <div className="choice__display">
                 <h1> Your choice</h1>
-                <img src={selectedSrc} className="display__cert" alt="Certificate"></img>
+                <img src={selectedSrc} className="display__cert" alt="No Certificate Selected"></img>
                 {/* <NavLink to="/Certificateformed"> */}
                 <button className="BUTTON_KMY" onClick={this.handleSubmitDis}> Generate</button>
                 {/* </NavLink> */}

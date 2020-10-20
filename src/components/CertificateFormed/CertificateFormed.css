@@ -4,7 +4,8 @@ h1{
     text-align: center;
 }
 .cert__done {
-    width: 100%;
+    width: 80%;
+    margin-left:10%;
     height: 100vh;
     z-index: -999;
    background-repeat: no-repeat;

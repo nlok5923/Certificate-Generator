@@ -5,7 +5,7 @@ class CertificateFormed extends Component {
     render() {
         const {name,body,date,sbody1 ,sbody2 , img}=this.props
         return (
-            <div>
+            <div className="pos">
               <h1>Your certificate is ready</h1>
               <CertificateData name={name} body={body} date={date} sbody1={sbody1} sbody2={sbody2}/>
             <div className="cert__done" style={{backgroundImage: `url(${img})`}} >
