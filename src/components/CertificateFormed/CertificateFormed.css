@@ -1,7 +1,12 @@
-h1{
+
+.pos__h1{
+    color: #d5e4e6;
     font-size: 30px;
     font-family: "montserrat";
     text-align: center;
+}
+h2{
+    font-family: 'EB Garamond', serif;
 }
 .cert__done {
     width: 80%;

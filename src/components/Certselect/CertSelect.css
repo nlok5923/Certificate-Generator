@@ -1,6 +1,9 @@
 #dis__formed{
     display: none;
 }
+h2{
+    font-family: 'EB Garamond', serif;
+}
 .cert__holder {
     display:none;
     width: 60%;

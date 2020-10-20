@@ -18,6 +18,9 @@
   font-family: "montserrat";
   text-align: center;
 }
+h1{
+  font-family: 'EB Garamond', serif;
+}
 .form__section {
    width: 50%;
    display: flex;

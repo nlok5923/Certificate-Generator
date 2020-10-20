@@ -12,13 +12,14 @@
      margin-top:15%;
      margin-left:47%;
      font-size:25px;
+     font-family: 'EB Garamond', serif;
  }
  .date{
     font-family:"montserrat";
     position:absolute;
     background:none;
      margin-top:15%;
-     margin-left:69%;
+     margin-left:68%;
      font-size:20px;
  }
  p{ 
@@ -32,9 +33,9 @@
      margin-top:37%;
  }
  .sg1{
-     margin-left:24%;
+     margin-left:26%;
  }
  .sg2{
-     margin-left:70%;
+     margin-left:68%;
  }
  

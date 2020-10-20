@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import Swal from 'sweetalert2'
+// import html2canvas from "html2canvas"
+// import { jsPDF } from "jspdf"
+//npm install --save html2canvas
+
 
 
 // import {NavLink} from 'react-router-dom'
@@ -20,7 +24,24 @@ import "./midSection.css"
               sbody1:"",
               sbody2:""
          }
-     }
+   }
+   
+  // printDocument=(e)=>{
+  //   const input = document.getElementById('divToPrint');
+  //   html2canvas(input)
+  //     .then((canvas) => {
+  //       const imgData = canvas.toDataURL('image/png');
+  //       const pdf = new jsPDF();
+  //       pdf.addImage(imgData, 'JPEG', 0, 0);
+  //       // pdf.output('dataurlnewwindow');
+  //       pdf.save("download.pdf");
+  //     })
+  //   ;
+  // }
+
+
+
+
      handleChange =(e)=>{
         this.setState({[e.target.name]:e.target.value})
        // console.log(e.target.value.lastIndexOf(""))
@@ -78,7 +99,11 @@ import "./midSection.css"
     render() {
         const {name,body,date,sbody1,sbody2} = this.state;
         return (
-            <div>
+            <div> 
+            {/* <div className="mb5">
+            <button onClick={this.printDocument}>Print</button>
+          </div>
+            <div id='divToPrint'> */}
             <div id="mid__sec">
             <div>
             <h1>Fill fields accordingly</h1>
