@@ -22,20 +22,17 @@ class CertificateFormed extends Component {
         const {name,body,date,sbody1 ,sbody2 , img}=this.props
         return (
             <div>
-            <div className="mb5">
-            <button onClick={this.printDocument}>Print</button>
-          </div>
-          
-          <div id='divToPrint'>
+           <div id='divToPrint'>
             <div className="pos">
-            <h1 className="pos__h1">Your certificate is ready</h1>
+            {/* <h1 className="pos__h1">Your certificate is ready</h1> */}
               <CertificateData name={name} body={body} date={date} sbody1={sbody1} sbody2={sbody2}/>
             <div className="cert__done" style={{backgroundImage: `url(${img})`}} >
-            
-              
                 {/* <img className="certificate" src={img}></img> */}
             </div>
             </div>
+            </div>
+            <div className="mb5">
+            <button className="print__btn" onClick={this.printDocument}>Download</button>
             </div>
             </div>
         )

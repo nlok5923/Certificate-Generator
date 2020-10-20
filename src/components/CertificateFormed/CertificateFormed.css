@@ -19,3 +19,25 @@
     height: 96vh;
     margin-left: 10%;
 }
+.print__btn {
+    box-shadow: 5px 5px 10px grey;
+    background:#fa19dc;
+    border-radius: 20px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 7px 50px;
+    margin-left:42%;
+    color:white;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: "montserrat";
+    display: block;
+}
+.print__btn:hover{
+    background: #1E62D0;
+}
