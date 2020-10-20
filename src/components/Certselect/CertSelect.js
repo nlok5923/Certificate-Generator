@@ -10,12 +10,14 @@ import Certificateformed from "../CertificateFormed/CertificateFormed"
          super(props)
      
          this.state = {
-              selectedSrc:"Images/blank.jpg"
+              selectedSrc:"Images/blank.jpg",
+              choice: "No template chosen"
          }
      }
      ImageSelected =(e) =>{
           this.setState({
-              selectedSrc:e.target.src
+              selectedSrc:e.target.src,
+              choice:"your choice"
           })
           console.log(e.target.src)
         //  alert(e.target.src)
@@ -48,7 +50,7 @@ import Certificateformed from "../CertificateFormed/CertificateFormed"
      }
      
     render() {
-        const {selectedSrc} =this.state
+        const {selectedSrc,choice} =this.state
         return (
             <div>
             <div id="handle__dis">
@@ -59,7 +61,7 @@ import Certificateformed from "../CertificateFormed/CertificateFormed"
             }
             </div>
             <div className="choice__display">
-                <h1> Your choice</h1>
+                <h1>{choice}</h1>
                 <img src={selectedSrc} className="display__cert" alt="No Certificate Selected"></img>
                 {/* <NavLink to="/Certificateformed"> */}
                 <button className="BUTTON_KMY" onClick={this.handleSubmitDis}> Generate</button>
