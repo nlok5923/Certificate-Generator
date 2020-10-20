@@ -103,7 +103,7 @@ import "./midSection.css"
             </form>
             <div className="json__link">
             <h1>OR</h1>
-            <input type="text" name="link" onChange={this.handleChange}></input>
+            <input placeholder="Enter json link" type="text" name="link" onChange={this.handleChange}></input>
             </div>
             </div>
             </div>
