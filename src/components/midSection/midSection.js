@@ -81,7 +81,7 @@ import "./midSection.css"
             <div>
             <div id="mid__sec">
             <div>
-            {/* <h1>Fill fields accordingly</h1> */}
+            <h1>Fill fields accordingly</h1>
             <img src="./Images/certificate-1.jpg" alt="certificate"></img>
            </div> <div className="form__section">
             <form onSubmit={this.submitHandler}>
