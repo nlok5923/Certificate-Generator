@@ -121,7 +121,7 @@ import "./midSection.css"
             {/* <h1>{file1}0</h1> */}
             {/* <label for="file1">Signature of Signatory body 1</label><br />
             <input type="file" className="file" name="file2" value ={file2} onChange={this.handlefileChange}></input><br /> */} 
-            <textarea name="body" placeholder="Enter body you want" rows="7" cols="43" value={body}  onChange={this.handleChange} autoComplete="off" required></textarea>
+            <textarea name="body" placeholder="Enter body you want" rows="7" cols="58" value={body}  onChange={this.handleChange} autoComplete="off" required></textarea>
             {/* <NavLink to="/CertSelect"> */}
             <button type="submit" onClick={this.handleSubmitClick}>Select Template</button>
             {/* </NavLink> */}
