@@ -1,5 +1,5 @@
 
-# Certificate-Generator
+# Certificate-Geneator
 
 ## <h1 align="center">A</h1>
 
