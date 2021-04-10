@@ -9,7 +9,7 @@
 
 ## <h1 align="center">Project</h1>
 
-This is an Under-development Certificate generator but the basic structure of this WebApp has been implemented.
+This is an Under-development Certificate but the basic structure of this WebApp has been implemented.
 
 PS: do not use JSON placeholder for now to generate multiple certificate at once as this functionality hasn't implemented in it till now.
 
