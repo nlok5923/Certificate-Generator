@@ -1,7 +1,7 @@
 
 # Certificate-Generator
 
-## <h1 align="center">A</h1>
+## <h1 align="center">An</h1>
 
 <p align="center">
   <img src="https://3ulsmb4eg8vz37c0vz2si64j-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/react-native-UX-design.gif" alt="logo" width="40%" />
